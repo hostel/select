@@ -1,0 +1,11 @@
+.item {
+    padding: 5px 20px;
+    font-size: 1.6rem;
+    color: black;
+    cursor: pointer;
+
+    &.isActive,
+    &:hover {
+        background: gray;
+    }
+}

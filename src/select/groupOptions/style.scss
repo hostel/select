@@ -1,0 +1,55 @@
+.frame {
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    vertical-align: middle;
+    fill: white;
+    border-bottom: 1px solid gray;
+
+    &.isOpen {
+        padding-bottom: 10px;
+    }
+
+    &:first-of-type {
+        margin-top: -10px;
+    }
+
+    &:last-of-type {
+        margin-bottom: -10px;
+        border-bottom: none;
+    }
+}
+
+.wrapArrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 18px;
+    margin: auto;
+    width: 10px;
+    height: 7px;
+    transition: trasform 0.3s;
+
+    svg {
+        vertical-align: top;
+    }
+
+    &.isOpen {
+        transform: rotate(180deg);
+    }
+}
+
+.title {
+    position: relative;
+    padding: 9px 20px;
+    height: 40px;
+    font-size: 1.6rem;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.content {
+    will-change: transform, opacity, height;
+}
